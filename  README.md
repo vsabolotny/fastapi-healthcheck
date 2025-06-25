@@ -29,5 +29,14 @@ Response:
 health status is green
 ```
 
+## Docker
+
+To build and run the application using Docker:
+
+```bash
+docker build -t fastapi-health .
+docker run -p 8000:8000 fastapi-health
+```
+
 ## License
 MIT

@@ -24,3 +24,6 @@ htmlcov/
 .coverage
 .cache
 .pytest_cache/
+
+# environment variables
+.env
