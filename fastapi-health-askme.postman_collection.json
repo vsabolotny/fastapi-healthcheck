@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "FastAPI Health & AskMe",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AskMe",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"What is the capital of France?\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/askme",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["askme"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
